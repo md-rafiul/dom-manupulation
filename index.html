@@ -12,57 +12,120 @@
     <!-- linking fonts -->
   </head>
   <body>
-    <header class=""></header>
-      <h1 class="my-8 font-bold text-6xl text-center">Top Players of the world</h1>
+    <header class="my-8 container mx-auto">
+      <h1 class="font-bold text-6xl text-center my-8">
+        Top Players of the world
+      </h1>
+      <p class="text-4xl text-center">
+        Lionel Messi and Cristiano Ronaldo have ruled the roost for the lion's
+        share of 20 years, but their reign has come under increasing threat from
+        the next generation of stars with high hopes of reaching the top.
+      </p>
     </header>
     <main>
-        <section class="grid grid-cols-3 gap-4 ">
-            <div class="grid grid-cols-3 col-span-2 gap-4 " >
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/images/messi.png" alt="">
-                    <div class="px-6 py-4 flex flex-col align-center">
-                        <div id="Messi" class="font-bold text-2xl text-center mb-2">Lionel Messi</div>
-                        <button class=" px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400">Select</button>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/images/neymar.png" alt="">
-                    <div class="px-6 py-4 flex flex-col align-center">
-                        <div id="Neymar" class="font-bold text-2xl text-center mb-2">Neymar Jr.</div>
-                        <button class=" px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400">Select</button>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/images/ronaldo.png" alt="">
-                    <div class="px-6 py-4 flex flex-col align-center">
-                        <div id="Ronaldo" class="font-bold text-2xl text-center mb-2">Cristiano Ronaldo</div>
-                        <button class=" px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400">Select</button>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/images/mbappe.png" alt="">
-                    <div class="px-6 py-4 flex flex-col align-center">
-                        <div id="Kylian" class="font-bold text-2xl text-center mb-2">Kylian Mbappé</div>
-                        <button class=" px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400">Select</button>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/images/lewan.png" alt="">
-                    <div class="px-6 py-4 flex flex-col align-center">
-                        <div id="Lewan" class="font-bold text-2xl text-center mb-2">Robert Lewandowski</div>
-                        <button class=" px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400">Select</button>
-                    </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="/images/kane.png" alt="">
-                    <div class="px-6 py-4 flex flex-col align-center">
-                        <div id="Kane" class="font-bold text-2xl text-center mb-2">Harry Kane</div>
-                        <button class=" px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400">Select</button>
-                    </div>
-                </div>
-                
+      <section class="grid grid-cols-5 gap-4 container mx-auto">
+        <!-- cards -->
+        <div class="grid grid-cols-3 col-span-4 gap-4">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/images/messi.png" alt="" />
+            <div class="px-6 py-4 flex flex-col align-center">
+              <div id="Messi" class="font-bold text-2xl text-center mb-2">
+                Lionel Messi
+              </div>
+              <button
+                class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
+              >
+                Select
+              </button>
             </div>
-        </section>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/images/neymar.png" alt="" />
+            <div class="px-6 py-4 flex flex-col align-center">
+              <div id="Neymar" class="font-bold text-2xl text-center mb-2">
+                Neymar Jr.
+              </div>
+              <button
+                class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/images/ronaldo.png" alt="" />
+            <div class="px-6 py-4 flex flex-col align-center">
+              <div id="Ronaldo" class="font-bold text-2xl text-center mb-2">
+                Cristiano Ronaldo
+              </div>
+              <button
+                class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/images/mbappe.png" alt="" />
+            <div class="px-6 py-4 flex flex-col align-center">
+              <div id="Kylian" class="font-bold text-2xl text-center mb-2">
+                Kylian Mbappé
+              </div>
+              <button
+                class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/images/lewan.png" alt="" />
+            <div class="px-6 py-4 flex flex-col align-center">
+              <div id="Lewan" class="font-bold text-2xl text-center mb-2">
+                Robert Lewandowski
+              </div>
+              <button
+                class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="/images/kane.png" alt="" />
+            <div class="px-6 py-4 flex flex-col align-center">
+              <div id="Kane" class="font-bold text-2xl text-center mb-2">
+                Harry Kane
+              </div>
+              <button
+                class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- selected and calculation-->
+        <div class="grid grid-cols-1 gap-4">
+          <div id="selected-5" class="bg-blue-300 text-center">
+            <h1 class="font-bold text-3xl p-6">Selected - V</h1>
+            <ul>
+              <li>1. <span id="item-1">name</span></li>
+              <li>2. <span id="item-2">name</span></li>
+              <li>3. <span id="item-3">name</span></li>
+              <li>4. <span id="item-4">name</span></li>
+              <li>5. <span id="item-5">name</span></li>
+            </ul>
+          </div>
+          <div id="calculation" class="bg-blue-300 flex flex-col text-center">
+            <h1>Budget</h1>
+            <div>
+              <span>Per Player</span>
+              <input type="text" name="" id="perPlayerBudget" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
