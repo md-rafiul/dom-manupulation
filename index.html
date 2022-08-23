@@ -23,9 +23,9 @@
       </p>
     </header>
     <main>
-      <section class="grid grid-cols-5 gap-4 container mx-auto">
+      <section class="grid grid-cols-8 gap-4 container mx-auto">
         <!-- cards -->
-        <div class="grid grid-cols-3 col-span-4 gap-4">
+        <div class="grid grid-cols-3 col-span-6 gap-4">
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <img class="w-full" src="/images/messi.png" alt="" />
             <div class="px-6 py-4 flex flex-col align-center">
@@ -33,6 +33,7 @@
                 Lionel Messi
               </div>
               <button
+                id="select"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -106,26 +107,60 @@
           </div>
         </div>
         <!-- selected and calculation-->
-        <div class="grid grid-cols-1 gap-4">
+        <div class="grid grid-cols-1 col-span-2 gap-4">
+          <!-- select -->
           <div id="selected-5" class="bg-blue-300 text-center">
             <h1 class="font-bold text-3xl p-6">Selected - V</h1>
-            <ul>
-              <li>1. <span id="item-1">name</span></li>
-              <li>2. <span id="item-2">name</span></li>
-              <li>3. <span id="item-3">name</span></li>
-              <li>4. <span id="item-4">name</span></li>
-              <li>5. <span id="item-5">name</span></li>
-            </ul>
+            <ol>
+              <li id="item-1">name</li>
+              <li id="item-2">name</li>
+              <li id="item-3">name</li>
+              <li id="item-4">name</li>
+              <li id="item-5">name</li>
+            </ol>
           </div>
+          <!-- calculation -->
           <div id="calculation" class="bg-blue-300 flex flex-col text-center">
-            <h1>Budget</h1>
+            <h1 class="font-bold text-3xl p-6">Budget</h1>
             <div>
-              <span>Per Player</span>
-              <input type="text" name="" id="perPlayerBudget" />
+              <span class="text-xl px-2">Per Player</span>
+              <input type="text" name="" id="perPlayerBudget" class="py-2" />
+            </div>
+            <button
+              id="cal-player-expenses"
+              class="bg-blue-800 text-center w-auto m-4 py-4 text-white"
+            >
+              Calculate
+            </button>
+            <div class="flex justify-center">
+              <span class="text-xl px-2">Player expenses </span>
+              <span class="text-xl px-2"
+                >$<span id="player-expense">00</span></span
+              >
+            </div>
+            <div class="my-4 flex justify-center">
+              <span class="text-xl px-2">Manager</span>
+              <input type="text" name="" id="managerBudget" class="py-2" />
+            </div>
+            <div class="my-4 flex justify-evenly">
+              <span class="text-xl px-2">Coach</span>
+              <input type="text" name="" id="coachBudget" class="py-2" />
+            </div>
+            <button
+              id="calculate-total"
+              class="bg-blue-800 text-center w-auto m-4 py-4 text-white"
+            >
+              Calculate Total
+            </button>
+            <div class="flex justify-center">
+              <span class="text-xl px-2">Total </span>
+              <span class="text-xl px-2">$<span id="total">00</span></span>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
