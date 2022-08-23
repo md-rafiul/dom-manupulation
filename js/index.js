@@ -84,15 +84,16 @@ document.getElementById('selectKane').addEventListener('click', function(){
 
 
 document.getElementById('cal-player-expenses').addEventListener('click', function(){
-    // if(isNaN()){
-    //     alert("Please input number!!!");
-    // }
     const totalPlayer = document.getElementById('player-list');
     const length = totalPlayer.childNodes.length;
+    let playerExpense = getValueFromTextField('perPlayerBudgetInput');
     
-
-    let playerExpense = getValueFromTextField('perPlayerBudgetInput')*length;
-    setInnerText('player-expense', playerExpense);
+    if(isNaN(playerExpense)){
+        alert("Please input number!!!");
+    }else{
+        playerExpense = playerExpense * length;
+        setInnerText('player-expense', playerExpense);
+    }    
 })
 
 document.getElementById('calculate-total').addEventListener('click', function(){
@@ -100,6 +101,11 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     let managerExpense = getValueFromTextField('managerBudget');
     let coachExpense = getValueFromTextField('coachBudget');
     console.log(playerExpense , managerExpense , coachExpense);
+
+    if (isNaN(playerExpense) || isNaN(managerExpense) || isNaN(coachExpense)){
+        alert("Please input number!!!");
+    }else{
     let total = playerExpense + managerExpense + coachExpense;
     setInnerText('total', total);
+}
 })
