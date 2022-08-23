@@ -43,14 +43,26 @@ document.getElementById('select').addEventListener('click', function(){
 
 
 document.getElementById('cal-player-expenses').addEventListener('click', function(){
-    alart("Please input number!!!");
 
-    if (isNaN(getValueFromTextField('perPlayerBudget'))){
-    }
-    else{
-    let playerExpense = getValueFromTextField('perPlayerBudget')*5;
-    setInnerText('player-expense', playerExpense);
-    }
+
+
+
+
+
+
+
+    
+    
+    // const playerExpense = getValueFromTextField('perPlayerBudget');
+    // console.log(playerExpense);
+    // setInnerText('player-expense', playerExpense);
+   
+    // if (isNaN(getValueFromTextField('perPlayerBudget'))){
+    //     console.log(isNaN(getValueFromTextField('perPlayerBudget')));
+    //     alert("Please input number!!!");
+    // }
+    // else{
+    // }
 })
 
 document.getElementById('calculate-total').addEventListener('click', function(){
