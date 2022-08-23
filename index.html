@@ -8,7 +8,7 @@
     <!-- linking css -->
 
     <!-- linking css framework -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- linking fonts -->
   </head>
   <body>
@@ -33,7 +33,7 @@
                 Lionel Messi
               </div>
               <button
-                id="select"
+                id="selectMessi"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -47,6 +47,7 @@
                 Neymar Jr.
               </div>
               <button
+                id="selectNeymar"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -60,6 +61,7 @@
                 Cristiano Ronaldo
               </div>
               <button
+                id="selectRonaldo"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -73,6 +75,7 @@
                 Kylian Mbappé
               </div>
               <button
+                id="selectKylian"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -86,6 +89,7 @@
                 Robert Lewandowski
               </div>
               <button
+                id="selectLewan"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -99,6 +103,7 @@
                 Harry Kane
               </div>
               <button
+                id="selectKane"
                 class="px-6 py-4 text-center text-bold text-xl bg-blue-400 hover:bg-gray-400"
               >
                 Select
@@ -111,20 +116,14 @@
           <!-- select -->
           <div id="selected-5" class="bg-blue-300 text-center">
             <h1 class="font-bold text-3xl p-6">Selected - V</h1>
-            <ol>
-              <li id="item-1">name</li>
-              <li id="item-2">name</li>
-              <li id="item-3">name</li>
-              <li id="item-4">name</li>
-              <li id="item-5">name</li>
-            </ol>
+            <ol id="player-list"></ol>
           </div>
           <!-- calculation -->
           <div id="calculation" class="bg-blue-300 flex flex-col text-center">
             <h1 class="font-bold text-3xl p-6">Budget</h1>
             <div>
               <span class="text-xl px-2">Per Player</span>
-              <input type="text" name="" id="perPlayerBudget" class="py-2" />
+              <input id="perPlayerBudgetInput" type="text" class="py-2" />
             </div>
             <button
               id="cal-player-expenses"
